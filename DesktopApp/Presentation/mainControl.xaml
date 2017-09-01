@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="UserInterface.mainControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="400">
+    <Grid>
+        <Label Content="MAIN MENU" FontSize="30" FontFamily="Times New Roman" HorizontalAlignment="Center" Margin="107,-10,107,10" />
+        <Button Name="resev" Content="Resevations" HorizontalAlignment="Center" Margin="141,44,141,0" VerticalAlignment="Top" Width="118" Height="46" Click="resev_Click"/>
+        <Button Name="booking" Content="Booking" HorizontalAlignment="Center" Margin="141,111,141,0" VerticalAlignment="Top" Width="118" Height="46" Click="booking_Click"/>
+        <Button Name="rooms" Content="Rooms" HorizontalAlignment="Center" Margin="141,176,141,0" VerticalAlignment="Top" Width="118" Height="46" Click="rooms_Click"/>
+        <Button Name="customers" Content="Customer" HorizontalAlignment="Center" Margin="141,243,141,0" VerticalAlignment="Top" Width="118" Height="46" Click="customer_Click"/>
+        <Button x:Name="requests" Content="Request&#xD;&#xA;" HorizontalAlignment="Center" Margin="141,314,141,0" VerticalAlignment="Top" Width="118" Height="46" Click="request_Click"/>
+
+    </Grid>
+</UserControl>

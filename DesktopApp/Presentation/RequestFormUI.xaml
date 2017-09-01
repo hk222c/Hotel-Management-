@@ -1,0 +1,26 @@
+﻿<Window x:Class="UserInterface.RequestFormUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RequestFormUI" Height="310" Width="250" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Room No." Grid.Row="0" Grid.Column="0" Margin="0,20,0,0"/>
+        <TextBox Name="Roomnumber" Grid.Row="0" Grid.Column="1" Margin="0,20,0,20" IsEnabled="False"/>
+        <Label Content="Service Type." Grid.Row="1" Grid.Column="0" Margin="0,20,0,0"/>
+        <ComboBox Name="ServiceTypes" Grid.Row="1" Grid.Column="1" Margin="0,20,0,20"/>
+        <Label Content="Description" Grid.Row="2" Grid.Column="0" Margin="0,20,0,0"/>
+        <TextBox Name="descrptext" Grid.Row="2" Grid.Column="1" Margin="0,20,0,20" />
+        <Button Name="okbutton" Grid.Row="3" Grid.Column="0" Margin="5,20,5,20" Click="okbutton_Click">Ok</Button>
+        <Button Name="cancelbutton" Grid.Row="3" Grid.Column="1" Margin="5,20,5,20" Click="cancelbutton_Click">Cancel</Button>
+    </Grid>
+</Window>

@@ -1,0 +1,35 @@
+﻿<Window x:Class="UserInterface.RoomsUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RoomsUI" Height="600" Width="700" WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="250"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="ROOMS" Grid.Row="0" Grid.ColumnSpan="3" Margin="0,0,0,0" FontSize="20" FontFamily="Times New Roman" HorizontalAlignment="Center" />
+        <ListView Name="RoomsList" ItemsSource="{Binding}"  Height="469" Width="682" Grid.Row="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Top" >
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Width="100" Header="Id"
+                                        DisplayMemberBinding="{Binding Path=id}"/>
+                        <GridViewColumn Width="100" Header="Room No"
+                                        DisplayMemberBinding="{Binding Path=roomnumber}"/>
+                        <GridViewColumn Width="100" Header="Room Type"
+                                        DisplayMemberBinding="{Binding Path=roomtypeid}"/>
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Grid.Row="2" Grid.Column="1" Margin="30,0,30,10" Click="AddRequest_Click">Add Request</Button>
+
+    </Grid>
+</Window>
